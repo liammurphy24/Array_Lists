@@ -42,7 +42,42 @@ public class Program {
         myFirstList.AddAtIndex(900, 100);
         myFirstList.Print();
 
-        System.out.println(myFirstList.GetElementAtIndex(1));
+        try {
+        myFirstList.DeleteAtIndex(3);
+        myFirstList.Print();
+        myFirstList.DeleteAtStart();
+        myFirstList.Print();
+        myFirstList.DeleteAtEnd();
+        myFirstList.Print();
+        myFirstList.ClearAll();
+        myFirstList.Print();
+        System.out.println(myFirstList.IsEmpty());
+        myFirstList.DeleteAtEnd();
+        myFirstList.Print();
+        } catch(Exception exception) {
+            System.out.println(exception);
+        }
+
+        myFirstList.ClearAll();
+        myFirstList.Print();
+        System.out.println(myFirstList.IsEmpty());
+        System.out.println(myFirstList.Size());
+
+
+        //myFirstList.Print();
+        //System.out.println(myFirstList.GetElementAtIndex(1));
+
+        MyArrayList<String> mySecondList = new MyArrayList<String>();
+        mySecondList.AddStart("Hi");
+        mySecondList.AddEnd("World");
+        mySecondList.AddAtIndex("beautiful", 1);
+        mySecondList.Print();
+        System.out.println(mySecondList.Size());
+        mySecondList.DeleteAtEnd();
+        mySecondList.Print();
+        mySecondList.ClearAll();
+        mySecondList.Print();
+        
         
 
 
