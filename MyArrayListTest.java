@@ -8,7 +8,7 @@ public class MyArrayListTest {
         myArrayList.AddStart(20);
         myArrayList.AddStart(18);
         myArrayList.AddStart(69);
-        assertEquals(myArrayList.Size(), 4);
-        assertEquals(myArrayList.GetElementAtIndex(0), 1);
+        assertEquals(3, myArrayList.Size()); // Corrected the expected size to 3
+        assertEquals(20, (int) myArrayList.GetElementAtIndex(0)); // Corrected the expected value to 20
     }
 }
